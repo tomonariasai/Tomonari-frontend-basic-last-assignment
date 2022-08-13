@@ -2,6 +2,7 @@
 
 .card {
   position: relative;
+  border: none;
   .card-img {
     overflow: hidden;
     .triangle {
@@ -23,8 +24,6 @@
       position: absolute;
       top: 0px;
       left: 6px;
-      font-family: $fontfamily-gothic;
-      font-style: normal;
       font-weight: 700;
       font-size: $fontsize-l;
       line-height: 29px;
@@ -36,10 +35,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $white_smoke;
     padding: 32px;
     .card-text {
-      font-family: $fontfamily-gothic;
-      font-weight: 400;
       font-size: $fontsize-s;
       line-height: 33px;
       margin-bottom: 30px;
