@@ -2,6 +2,10 @@
 
 .even {
   border: 5px solid $orange_bistre;
+  li:nth-child(1) {
+    background-color: $orange_bistre !important;
+    border: none;
+  }
 }
 
 .plan-list {
@@ -24,13 +28,7 @@
     font-size: $fontsize-l;
     line-height: 29px;
     color: $white;
-  }
-  .odd-content {
     background-color: $orange_zorba;
-  }
-  .even-content {
-    background-color: $orange_bistre;
-    border: none;
   }
   li:nth-child(2) {
     background-color: $gray_desertStorm;
