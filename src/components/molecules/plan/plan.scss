@@ -1,13 +1,5 @@
 @use "../../variables" as *;
 
-.even {
-  border: 5px solid $orange_bistre;
-  li:nth-child(1) {
-    background-color: $orange_bistre !important;
-    border: none;
-  }
-}
-
 .plan-list {
   text-align: center;
   list-style: none;
@@ -47,5 +39,13 @@
   }
   li:last-child {
     border-bottom: 1px solid $gray_gainsboro;
+  }
+}
+
+.even {
+  border: 5px solid $orange_bistre;
+  li:nth-child(1) {
+    background-color: $orange_bistre;
+    border: none;
   }
 }
