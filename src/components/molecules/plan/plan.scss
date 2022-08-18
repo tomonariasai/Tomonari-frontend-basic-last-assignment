@@ -40,12 +40,11 @@
   li:last-child {
     border-bottom: 1px solid $gray_gainsboro;
   }
-}
-
-.even {
-  border: 5px solid $orange_bistre;
-  li:nth-child(1) {
-    background-color: $orange_bistre;
-    border: none;
+  &.even {
+    border: 5px solid $orange_bistre;
+    li:nth-child(1) {
+      background-color: $orange_bistre;
+      border: none;
+    }
   }
 }
