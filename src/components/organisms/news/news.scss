@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  margin-bottom: 35px;
 
   .news-list {
     display: flex;
@@ -25,6 +26,7 @@
         .posted-at {
           color: $gray_nobel;
           font-size: $fontsize-xs;
+          line-height: 12px;
           margin-bottom: 10px;
         }
 
@@ -33,11 +35,13 @@
           h3 {
             color: $black;
             font-size: $fontsize-m;
+            font-weight: 400;
+            line-height: 23px;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
             margin-bottom: 0px;
-            transition: all 0.2s 0s ease;
+            transition: all 0.2s ease;
             &:hover {
               color: $orange_bistre;
             }
