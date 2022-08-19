@@ -1,0 +1,50 @@
+@use "../../variables" as *;
+
+.plan-list {
+  text-align: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  @media screen and(max-width: $breakpoint-md) {
+    margin-bottom: 24px;
+  }
+  .list-content {
+    border: 1px solid $gray_gainsboro;
+    border-bottom: none;
+    font-size: $fontsize-s;
+    line-height: 20px;
+    padding: 20px;
+  }
+  li:nth-child(1) {
+    font-weight: 700;
+    font-size: $fontsize-l;
+    line-height: 29px;
+    color: $white;
+    background-color: $orange_zorba;
+  }
+  li:nth-child(2) {
+    background-color: $gray_desertStorm;
+    padding: 24px;
+    div:nth-child(1) {
+      color: $orange_bistre;
+      font-weight: 700;
+      font-size: $fontsize-xxl;
+      line-height: 58px;
+      margin-bottom: 16px;
+      span {
+        font-size: $fontsize-l;
+        line-height: 29px;
+      }
+    }
+  }
+  li:last-child {
+    border-bottom: 1px solid $gray_gainsboro;
+  }
+  &.even {
+    border: 5px solid $orange_bistre;
+    li:nth-child(1) {
+      background-color: $orange_bistre;
+      border: none;
+    }
+  }
+}
