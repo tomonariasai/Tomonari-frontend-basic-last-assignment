@@ -12,9 +12,6 @@
     margin-bottom: 14px;
 
     .news-card {
-      .first-news {
-        border-top: 1px solid $gray_gainsboro !important;
-      }
       .news-content {
         height: 83.6px;
         flex-direction: column;
@@ -22,6 +19,9 @@
         border: 1px solid $gray_gainsboro;
         border-top: none;
         padding: 20px;
+        &.first-news {
+          border-top: 1px solid $gray_gainsboro;
+        }
 
         .posted-at {
           color: $gray_nobel;
