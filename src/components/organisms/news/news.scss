@@ -1,0 +1,56 @@
+@use "../../variables" as *;
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 35px;
+
+  .news-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+
+    .news-card {
+      .news-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 85px;
+        width: 100%;
+        border: 1px solid $gray_gainsboro;
+        border-top: none;
+        padding: 0 26px;
+
+        &.first-news {
+          border-top: 1px solid $gray_gainsboro;
+        }
+
+        .posted-at {
+          color: $gray_nobel;
+          font-size: $fontsize-xs;
+          line-height: 12px;
+          margin-bottom: 10px;
+        }
+
+        & > a {
+          text-decoration: none;
+          h3 {
+            color: $black;
+            font-size: $fontsize-m;
+            font-weight: 400;
+            line-height: 23px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-bottom: 0px;
+            transition: all 0.2s ease;
+            &:hover {
+              color: $orange_bistre;
+            }
+          }
+        }
+      }
+    }
+  }
+}
