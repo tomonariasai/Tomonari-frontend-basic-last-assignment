@@ -2,14 +2,14 @@
 
 .navbar {
   background-color: $black;
-  padding: 0;
+  padding: 16px;
   @media screen and(min-width: $breakpoint-xl) {
     padding: 0 30px;
     background-color: $black_50;
   }
 
   .navbar-brand {
-    padding: 19.72px 16px;
+    padding: 0px;
     margin-right: 0;
     @media screen and(min-width: $breakpoint-xl) {
       padding: 0;
@@ -17,15 +17,13 @@
 
     .header-img {
       width: 120px;
-      height: 20.56px;
       @media screen and(min-width: $breakpoint-xl) {
         width: 140px;
-        height: 23.99px;
       }
     }
   }
   .navbar-toggler {
-    padding: 0px 16px;
+    padding: 0;
   }
 
   #navbarNavDropdown {
@@ -43,7 +41,7 @@
         font-size: $fontsize-s;
         line-height: 20px;
         color: $white;
-        padding: 15px 16px;
+        padding: 15px 0px;
         &:hover {
           background-color: $orange_bistre;
         }
@@ -53,7 +51,7 @@
       }
       .plus-img {
         position: absolute;
-        right: 16px;
+        right: 0px;
         top: 12px;
         @media screen and(min-width: $breakpoint-xl) {
           visibility: hidden;
@@ -70,7 +68,7 @@
           font-size: $fontsize-s;
           color: $white;
           line-height: 20px;
-          padding: 15px 28px;
+          padding: 15px 12px;
           margin: 0;
           &:hover {
             background-color: $orange_bistre;
