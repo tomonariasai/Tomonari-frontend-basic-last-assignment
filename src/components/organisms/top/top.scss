@@ -1,0 +1,48 @@
+@use "../../variables" as *;
+
+.top {
+  color: $white;
+  background-color: $black;
+  margin-bottom: 30px;
+  @media screen and(max-width: $breakpoint-lg) {
+    margin-bottom: 40px;
+  }
+  & .top-img-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../../../img/top.jpg");
+    background-size: 100% 100%;
+    @media screen and(max-width: $breakpoint-lg) {
+      height: 360px;
+      background-size: cover;
+    }
+
+    & .top-img-text {
+      font-weight: 400;
+      font-family: $fontfamily-mincho;
+      font-size: $fontsize-xl;
+      line-height: 52px;
+      writing-mode: vertical-rl;
+      margin: 0;
+      @media screen and(max-width: $breakpoint-lg) {
+        font-size: $fontsize-l;
+        line-height: 29px;
+      }
+    }
+  }
+  & .message {
+    text-align: center;
+    padding: 52px 36.5px 74px;
+    @media screen and(max-width: $breakpoint-lg) {
+      padding: 32px 36px;
+    }
+    & .message_title {
+      @media screen and(max-width: $breakpoint-lg) {
+        line-height: 29px;
+      }
+    }
+  }
+}
