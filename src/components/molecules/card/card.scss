@@ -3,8 +3,10 @@
 .card {
   position: relative;
   border: none;
+  border-radius: 0;
   .card-img {
     overflow: hidden;
+    border-radius: 0;
     .triangle {
       position: absolute;
       border-bottom: 150px solid transparent;
@@ -13,6 +15,7 @@
     }
     .card-img-top {
       transition: all 0.5s 0s ease;
+      border-radius: 0;
       &:hover {
         transform: scale(1.2);
       }
@@ -29,6 +32,7 @@
       line-height: 29px;
       color: $orange_bistre;
       z-index: 2;
+      margin: 0;
     }
   }
   .card-body {
