@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .message {
+    padding-top: 0;
+    .message_title {
+      color: $orange_bistre;
+    }
+  }
+  .plan-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0 30px;
+    margin-bottom: 40px;
+    @media screen and(max-width: $breakpoint-md) {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+  }
+}
