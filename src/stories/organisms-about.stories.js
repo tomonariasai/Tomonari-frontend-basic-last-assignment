@@ -3,4 +3,4 @@ import "../components/organisms/about/about.scss";
 
 export default { title: "Organisms/About" };
 
-export const Header = () => Item_About;
+export const About = () => Item_About;
