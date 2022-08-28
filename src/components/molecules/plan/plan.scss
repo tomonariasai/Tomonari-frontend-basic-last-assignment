@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 .plan-list {
+  width: 100%;
   text-align: center;
   list-style: none;
   margin: 0px;
@@ -21,6 +22,7 @@
     line-height: 29px;
     color: $white;
     background-color: $orange_zorba;
+    white-space: nowrap;
   }
   li:nth-child(2) {
     background-color: $gray_desertStorm;
