@@ -1,0 +1,19 @@
+@use "../../variables" as *;
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 0 24px;
+  margin-bottom: 100px;
+  @media screen and(max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: 40px 0;
+    margin-bottom: 40px;
+  }
+  .card {
+    width: 100%;
+    .card-body {
+      justify-content: space-between;
+    }
+  }
+}
