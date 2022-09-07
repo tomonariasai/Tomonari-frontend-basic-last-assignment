@@ -1,0 +1,28 @@
+@use "../../variables" as *;
+
+.Templates {
+  margin: 56px 0 59px;
+  @media screen and(max-width: $breakpoint-lg) {
+    margin: 65.5px 0 66.5px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 0 40px;
+    @media screen and(max-width: $breakpoint-lg) {
+      flex-direction: column;
+    }
+  }
+  .NewsAndEvents {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    &.news {
+      .news-content {
+        @media screen and(min-width: $breakpoint-lg) {
+          height: 80.4px;
+        }
+      }
+    }
+  }
+}
