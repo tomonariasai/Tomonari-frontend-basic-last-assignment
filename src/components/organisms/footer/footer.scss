@@ -38,10 +38,14 @@ footer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       padding: 16px;
+      gap: 8px;
     }
     .footer-nav-link {
       color: $black;
       padding: 0 8px;
+      @media screen and(max-width: $breakpoint-md) {
+        padding: 0;
+      }
       &:hover {
         color: $orange_bistre;
         text-decoration: none;
@@ -50,15 +54,6 @@ footer {
         border-right: 1px solid $black;
         @media screen and(max-width: $breakpoint-md) {
           border: 0;
-        }
-      }
-      @media screen and(max-width: $breakpoint-md) {
-        padding: 0;
-        &:nth-child(odd) {
-          margin-right: 8px;
-        }
-        &:nth-child(-n + 6) {
-          margin-bottom: 8px;
         }
       }
     }
