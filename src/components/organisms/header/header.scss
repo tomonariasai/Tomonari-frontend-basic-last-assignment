@@ -51,12 +51,14 @@
         line-height: 20px;
         color: $white;
         padding: 15px 16px;
+        transition: all 0.2s 0s ease;
         &:hover {
-          background-color: $orange_bistre;
+          @media screen and(min-width: $breakpoint-xl) {
+            color: $gray_nobel;
+          }
         }
         @media screen and(min-width: $breakpoint-xl) {
           padding: 35px 20px;
-          pointer-events: none;
         }
       }
       .plus-img {
@@ -80,6 +82,7 @@
           line-height: 20px;
           padding: 15px 28px;
           margin: 0;
+          transition: all 0.2s 0s ease;
           &:hover {
             background-color: $orange_bistre;
           }
