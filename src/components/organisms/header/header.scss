@@ -83,11 +83,14 @@
           padding: 15px 28px;
           margin: 0;
           transition: all 0.2s 0s ease;
-          &:hover {
-            background-color: $orange_bistre;
-          }
           @media screen and(min-width: $breakpoint-xl) {
             width: 220px;
+          }
+          &:hover {
+            background-color: transparent;
+            @media screen and(min-width: $breakpoint-xl) {
+              background-color: $orange_bistre;
+            }
           }
         }
       }
