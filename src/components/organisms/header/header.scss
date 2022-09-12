@@ -85,6 +85,7 @@
           transition: all 0.2s 0s ease;
           @media screen and(min-width: $breakpoint-xl) {
             width: 220px;
+            padding: 18px;
           }
           &:hover {
             background-color: transparent;
