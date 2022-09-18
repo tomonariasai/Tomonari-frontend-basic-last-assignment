@@ -1,84 +1,102 @@
 @use "../../variables" as *;
 
-.navbar {
-  background-color: $black;
-  padding: 15px 16px;
-  @media screen and(min-width: $breakpoint-xl) {
-    padding: 0 30px;
-    background-color: $black_50;
-  }
-
-  .navbar-brand {
-    padding: 0px;
-    margin-right: 0;
+header {
+  .navbar {
+    background-color: $black;
+    padding: 15px 16px;
     @media screen and(min-width: $breakpoint-xl) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 0 30px;
+      background-color: $black_50;
+    }
+
+    .navbar-brand {
+      padding: 0px;
+      margin-right: 0;
+      @media screen and(min-width: $breakpoint-xl) {
+        padding: 0;
+      }
+
+      .header-img {
+        width: 120px;
+        @media screen and(min-width: $breakpoint-xl) {
+          width: 140px;
+        }
+      }
+    }
+    .navbar-toggler {
+      outline: 0px;
       padding: 0;
     }
 
-    .header-img {
-      width: 120px;
+    #navbarNavDropdown {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: black;
       @media screen and(min-width: $breakpoint-xl) {
-        width: 140px;
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        background-color: transparent;
       }
-    }
-  }
-  .navbar-toggler {
-    outline: 0px;
-    padding: 0;
-  }
-
-  #navbarNavDropdown {
-    margin-top: 15px;
-    @media screen and(min-width: $breakpoint-xl) {
-      margin: 0;
-      display: flex;
-      justify-content: flex-end;
-    }
-    .nav-item {
-      &.dropdown:hover > .dropdown-menu {
-        @media screen and(min-width: $breakpoint-xl) {
-          display: block;
+      .nav-item {
+        &.dropdown:hover > .dropdown-menu {
+          @media screen and(min-width: $breakpoint-xl) {
+            display: block;
+          }
         }
-      }
-      .nav-link {
-        font-size: $fontsize-s;
-        line-height: 20px;
-        color: $white;
-        padding: 15px 0px;
-        &:hover {
-          background-color: $orange_bistre;
-        }
-        @media screen and(min-width: $breakpoint-xl) {
-          padding: 35px 20px;
-          pointer-events: none;
-        }
-      }
-      .plus-img {
-        position: absolute;
-        right: 0px;
-        top: 12px;
-        @media screen and(min-width: $breakpoint-xl) {
-          visibility: hidden;
-        }
-      }
-
-      .dropdown-menu {
-        background-color: $black;
-        margin-top: 0;
-        padding: 0;
-        border: none;
-        border-radius: 0;
-        .dropdown-item {
+        .nav-link {
           font-size: $fontsize-s;
-          color: $white;
           line-height: 20px;
-          padding: 15px 12px;
-          margin: 0;
+          color: $white;
+          padding: 15px 16px;
+          transition: all 0.2s 0s ease;
           &:hover {
-            background-color: $orange_bistre;
+            @media screen and(min-width: $breakpoint-xl) {
+              color: $gray_nobel;
+            }
           }
           @media screen and(min-width: $breakpoint-xl) {
-            width: 220px;
+            padding: 35px 20px;
+          }
+        }
+        .plus-img {
+          position: absolute;
+          right: 16px;
+          top: 12px;
+          @media screen and(min-width: $breakpoint-xl) {
+            visibility: hidden;
+          }
+        }
+
+        .dropdown-menu {
+          background-color: $black;
+          margin-top: 0;
+          padding: 0;
+          border: none;
+          border-radius: 0;
+          .dropdown-item {
+            font-size: $fontsize-s;
+            color: $white;
+            line-height: 20px;
+            padding: 15px 28px;
+            margin: 0;
+            transition: all 0.2s 0s ease;
+            @media screen and(min-width: $breakpoint-xl) {
+              width: 220px;
+              padding: 18px;
+            }
+            &:hover {
+              background-color: transparent;
+              @media screen and(min-width: $breakpoint-xl) {
+                background-color: $orange_bistre;
+              }
+            }
           }
         }
       }
