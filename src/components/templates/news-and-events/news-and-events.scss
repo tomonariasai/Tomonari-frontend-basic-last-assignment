@@ -1,9 +1,10 @@
 @use "../../variables" as *;
 
 .Templates {
-  margin: 56px 0 59px;
+  padding: 56px 0 59px;
+  background-color: $white_smoke;
   @media screen and(max-width: $breakpoint-lg) {
-    margin: 65.5px 0 66.5px;
+    padding: 65.5px 0 66.5px;
   }
   .container {
     display: flex;
@@ -19,6 +20,7 @@
     min-width: 0;
     &.news {
       .news-content {
+        background-color: $white;
         @media screen and(min-width: $breakpoint-lg) {
           height: 80.4px;
         }

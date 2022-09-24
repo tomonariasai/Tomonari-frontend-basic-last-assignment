@@ -8,6 +8,7 @@
   .message {
     width: 100%;
     padding-top: 0;
+    margin-top: 56px;
     .message_title {
       color: $orange_bistre;
     }
@@ -29,7 +30,7 @@
   .button {
     margin-bottom: 100px;
     @media screen and(max-width: $breakpoint-md) {
-      margin-bottom: 15px;
+      margin-bottom: 35px;
     }
   }
 }
